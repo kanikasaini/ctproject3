@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>CorrectDose</title>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
+	<style>
+	body {
+		background-color: #EAFAF1     ;
+	}
+  h2,h3 {
+    font-family: Lobster, Monospace;
+    
+  }
+p, ol, ul {
+	font-family: Dosis, Monospace;
+	font-size: 18px;
+}
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+	</style>
+		
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row" style="background-color: #fff;">
+    <div class="">
+      <h2 class="text-primary text-center" >CorrectDosage</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-4">
+      <a href="#"><img class="img-responsive " src="bottle.png" alt="bottle of pills"></a>
+    </div>
+    <div class="col-xs-8">
+    	<p style="margin-top:8%; font-size:calc(1vw + 10px)">Find the correct dosage of the medicines you take to help prevent any kind of overdose. 
+    	Incorrect use of medicines cause the bacteria to grow immune towards the medicine and hence, it becomes harder to tackle that bacteria.</p>
+    </div>
+  </div>
+  <div class="text-center" style="margin-top:2%"> <h3>Help us grow!</h3></div>
+  <div class="row" >
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i> Tweet</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger"><i class="fa fa-trash"></i>Share</button>
+    </div>
+  </div>
+
+  <p style="margin-top:2%">Things that can <span class="text-danger">harm:</span></p>
+  <ul>
+    <li>overdose</li>
+    <li>wrong medicine</li>
+    <li>wrong duration</li>
+  </ul>
+  <p>Top things to keep in mind:</p>
+  <ol>
+    <li>dosage</li>
+    <li>age</li>
+    <li>potency</li>
+  </ol>
+  <form action="/submit-cat-photo">
+    <div class="row">
+      <div class="col-xs-4">
+        <label><input type="radio" name="indoor-outdoor"> Antibiotics</label>
+      </div>
+      <div class="col-xs-4">
+        <label><input type="radio" name="indoor-outdoor">Antipyretics</label>
+      </div>
+      <div class="col-xs-4">
+        <label><input type="radio" name="indoor-outdoor">Analgesics</label>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Infant</label>
+      </div>
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Teenager</label>
+      </div>
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Adult</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-7">
+    <input type="text" class="form-control" placeholder="Name of the medicine" required>
+      </div>
+      <div class="col-xs-5">
+    <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+</body>
+</html>
